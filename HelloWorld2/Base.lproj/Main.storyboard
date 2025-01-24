@@ -26,11 +26,11 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="98.333333333333329"/>
                                                 <color key="backgroundColor" red="0.91976243257522583" green="0.011259747554064637" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
-                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-c4-nSs">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-c4-nSs">
                                                 <rect key="frame" x="0.0" y="118.33333333333334" width="240" height="98.333333333333343"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
-                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqf-Wi-2vn">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqf-Wi-2vn">
                                                 <rect key="frame" x="0.0" y="236.66666666666671" width="240" height="98.333333333333343"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </view>
