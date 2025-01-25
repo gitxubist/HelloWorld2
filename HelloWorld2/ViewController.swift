@@ -36,8 +36,8 @@ class ViewController: UIViewController {
 
     @IBAction func startButtonDidTapped() {
         let firstElement = semaphore.removeFirst()
+        semaphore.last?.alpha = 0.3
         semaphore.append(firstElement)
-        
         firstElement.alpha = 1
         }
     }
