@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bkf-Vv-hpS">
-                                <rect key="frame" x="16" y="62" width="408" height="98.333333333333258"/>
+                                <rect key="frame" x="16" y="61.999999999999993" width="408" height="98.333333333333314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91976243257522583" green="0.011259747554064637" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -26,20 +26,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdJ-bf-9HC">
-                                <rect key="frame" x="166" y="683" width="91.666666666666742" height="335"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START" buttonSize="large"/>
-                                <connections>
-                                    <action selector="startButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="OFa-3P-Xrn"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jqf-Wi-2vn">
                                 <rect key="frame" x="16" y="329" width="408" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdJ-bf-9HC">
+                                <rect key="frame" x="166" y="885.66666666666663" width="91.666666666666686" height="50.333333333333371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START" buttonSize="large"/>
+                                <connections>
+                                    <action selector="startButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHq-rb-cwo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
@@ -47,6 +47,7 @@
                     <connections>
                         <outlet property="greenLightLabel" destination="Jqf-Wi-2vn" id="5gX-6n-ziQ"/>
                         <outlet property="redLightLabel" destination="Bkf-Vv-hpS" id="HEu-DO-Lox"/>
+                        <outlet property="startButton" destination="FdJ-bf-9HC" id="QN0-lD-nNA"/>
                         <outlet property="yellowLightLabel" destination="tI8-c4-nSs" id="qLT-pv-1Ug"/>
                     </connections>
                 </viewController>
