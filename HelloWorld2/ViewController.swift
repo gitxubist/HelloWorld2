@@ -26,10 +26,6 @@ final class ViewController: UIViewController {
         yellowLightView.layer.cornerRadius = yellowLightView.frame.size.height / 2
         greenLightView.layer.cornerRadius = greenLightView.frame.size.height / 2
         
-        redLightView.alpha = lightIs0ff
-        yellowLightView.alpha = lightIs0ff
-        greenLightView.alpha = lightIs0ff
-        
         semaphore = [redLightView, yellowLightView, greenLightView]
     }
     
