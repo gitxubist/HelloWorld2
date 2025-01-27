@@ -6,34 +6,28 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-    var semaphore: [UIView] = []
-    
-    @IBOutlet weak var redLightLabel: UIView!
-    @IBOutlet weak var yellowLightLabel: UIView!
-    @IBOutlet weak var greenLightLabel: UIView!
+ 
+final class ViewController: UIViewController {
+    @IBOutlet weak var redLightView: UIView!
+    @IBOutlet weak var yellowLightView: UIView!
+    @IBOutlet weak var greenLightView: UIView!
     
     @IBOutlet weak var startButton: UIButton!
+    
+    private var semaphore: [UIView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaultCoreGraphics = CGRect(x: 0, y: 0, width: 100, height: 100)
+        redLightView.layer.cornerRadius = redLightView.frame.size.height / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.size.height / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.size.height / 2
         
-        redLightLabel.bounds = defaultCoreGraphics
-        yellowLightLabel.bounds = defaultCoreGraphics
-        greenLightLabel.bounds = defaultCoreGraphics
+        redLightView.alpha = 0.3
+        yellowLightView.alpha = 0.3
+        greenLightView.alpha = 0.3
         
-        redLightLabel.layer.cornerRadius = defaultCoreGraphics.height / 2
-        yellowLightLabel.layer.cornerRadius = defaultCoreGraphics.height / 2
-        greenLightLabel.layer.cornerRadius = defaultCoreGraphics.height / 2
-        
-        redLightLabel.alpha = 0.3
-        yellowLightLabel.alpha = 0.3
-        greenLightLabel.alpha = 0.3
-        
-        semaphore = [redLightLabel, yellowLightLabel, greenLightLabel]
+        semaphore = [redLightView, yellowLightView, greenLightView]
     }
     
     @IBAction func startButtonDidTapped() {
