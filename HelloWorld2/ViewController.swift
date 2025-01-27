@@ -16,6 +16,9 @@ final class ViewController: UIViewController {
     
     @IBOutlet private var semaphore: [UIView] = []
     
+    private let lightIsOn = 1.0
+    private let lightIs0ff = 0.3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,9 +26,9 @@ final class ViewController: UIViewController {
         yellowLightView.layer.cornerRadius = yellowLightView.frame.size.height / 2
         greenLightView.layer.cornerRadius = greenLightView.frame.size.height / 2
         
-        redLightView.alpha = 0.3
-        yellowLightView.alpha = 0.3
-        greenLightView.alpha = 0.3
+        redLightView.alpha = lightIs0ff
+        yellowLightView.alpha = lightIs0ff
+        greenLightView.alpha = lightIs0ff
         
         semaphore = [redLightView, yellowLightView, greenLightView]
     }
@@ -34,8 +37,8 @@ final class ViewController: UIViewController {
         let firstElement = semaphore.removeFirst()
         
         startButton.setTitle("NEXT", for: .normal)
-        semaphore.last?.alpha = 0.3
+        semaphore.last?.alpha = lightIs0ff
         semaphore.append(firstElement)
-        firstElement.alpha = 1
+        firstElement.alpha = lightIsOn
     }
 }
