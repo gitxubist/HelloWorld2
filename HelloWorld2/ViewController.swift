@@ -32,7 +32,9 @@ final class ViewController: UIViewController {
     @IBAction func startButtonDidTapped() {
         let firstElement = semaphore.removeFirst()
         
-        startButton.setTitle("NEXT", for: .normal)
+        if startButton.currentTitle != "NEXT" {
+            startButton.setTitle("NEXT", for: .normal)
+        }
         semaphore.last?.alpha = lightIs0ff
         semaphore.append(firstElement)
         firstElement.alpha = lightIsOn
