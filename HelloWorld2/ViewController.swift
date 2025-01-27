@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     
-    private var semaphore: [UIView] = []
+    @IBOutlet private var semaphore: [UIView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
